@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import editJsonFile from 'edit-json-file';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="container w-50">
-        <h1>Backstop visual regression testing</h1>
+        <h1>Backstop visual regression testingasdfasdf</h1>
         <Form>
           <Form.Group className="mb-3">
             <Form.Label>Reference Url</Form.Label>
