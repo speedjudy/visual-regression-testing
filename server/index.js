@@ -84,23 +84,26 @@ app.post('/test', (req, res) => {
       .catch(error => console.warn(error))
   setValue('backstop.json', req.body)
   setPValue('package.json', req.body)
-  exec("backstop test", (error, stdout, stderr) => {
-    // if (error) {
-    //   console.log(`error: ${error.message}`);
-    //   return;
-    // }
-    // if (stderr) {
-    //   console.log(`stderr: ${stderr}`);
-    //   return;
-    // }
-    // console.log(`stdout: ${stdout}`);
-  });
-  exec("npm run backstop:test", (error, stdout, stderr) => {
-  });
-  exec("npm run backstop:approve", (error, stdout, stderr) => {
-  });
-  exec("npm run backstop:test", (error, stdout, stderr) => {
-  });
+  // if (error) {
+  //   console.log(`error: ${error.message}`);
+  //   return;
+  // }
+  // if (stderr) {
+  //   console.log(`stderr: ${stderr}`);
+  //   return;
+  // }
+  // console.log(`stdout: ${stdout}`);
+  if (fs.existsSync('backstop_data')) {
+    exec("backstop test", (error, stdout, stderr) => {
+    });
+  } else {
+    exec("npm run backstop:test", (error, stdout, stderr) => {
+    });
+    exec("npm run backstop:approve", (error, stdout, stderr) => {
+    });
+    exec("npm run backstop:test", (error, stdout, stderr) => {
+    });
+  }
   res.send(`http://${address}:${port}/html_report/index.html`);
 });
 app.get('/clear', (req, res) => {
@@ -109,7 +112,7 @@ app.get('/clear', (req, res) => {
       if (err) {
         throw err
       }
-    
+
       console.log(`Folder is deleted!`)
     })
   }
