@@ -95,7 +95,24 @@ app.post('/test', (req, res) => {
     // }
     // console.log(`stdout: ${stdout}`);
   });
+  exec("npm run backstop:test", (error, stdout, stderr) => {
+  });
+  exec("npm run backstop:approve", (error, stdout, stderr) => {
+  });
+  exec("npm run backstop:test", (error, stdout, stderr) => {
+  });
   res.send(`http://${address}:${port}/html_report/index.html`);
+});
+app.get('/clear', (req, res) => {
+  if (fs.existsSync('backstop_data')) {
+    fs.rmdir('backstop_data', { recursive: true }, err => {
+      if (err) {
+        throw err
+      }
+    
+      console.log(`Folder is deleted!`)
+    })
+  }
 });
 
 app.listen(port, () => console.log(`Server running on http://${address}:${port}`));

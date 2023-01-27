@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [referUrl, setReferUrl] = useState("");
   const [url, setUrl] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState("http://localhost:8080/html_report/index.html");
   const [load, setLoad] = useState(false);
   const onChangeReferURL = (url) => {
     setReferUrl(url);
@@ -25,13 +25,16 @@ function App() {
         setTimeout(() => {
           setResult(res.data);
           setLoad(false);
-        }, 5000);
+          window.location.reload();
+        }, 10000);
       })
   }
   const handleClear = () => {
-    setUrl('1');
-    setReferUrl('1');
     setResult('');
+    axios.get(`http://localhost:8080/clear`)
+      .then(res => {
+          window.location.reload();
+      })
   }
   return (
     <div className="App">
