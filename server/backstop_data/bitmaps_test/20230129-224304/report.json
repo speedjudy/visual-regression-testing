@@ -1,10 +1,10 @@
-report({
+{
   "testSuite": "BackstopJS",
   "tests": [
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\HomepageTest__portfolio-details-1html_0_document_0_phone.png",
-        "test": "..\\bitmaps_test\\20230129-224813\\HomepageTest__portfolio-details-1html_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20230129-224304\\HomepageTest__portfolio-details-1html_0_document_0_phone.png",
         "selector": "document",
         "fileName": "HomepageTest__portfolio-details-1html_0_document_0_phone.png",
         "label": "/portfolio-details-1.html",
@@ -20,18 +20,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 9.562708855472014,
-          "misMatchPercentage": "9.56",
-          "analysisTime": 37
+          "rawMisMatchPercentage": 10.49420426065163,
+          "misMatchPercentage": "10.49",
+          "analysisTime": 25
         },
-        "diffImage": "..\\bitmaps_test\\20230129-224813\\failed_diff_HomepageTest__portfolio-details-1html_0_document_0_phone.png"
+        "diffImage": "..\\bitmaps_test\\20230129-224304\\failed_diff_HomepageTest__portfolio-details-1html_0_document_0_phone.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\HomepageTest__portfolio-details-1html_0_document_1_tablet.png",
-        "test": "..\\bitmaps_test\\20230129-224813\\HomepageTest__portfolio-details-1html_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20230129-224304\\HomepageTest__portfolio-details-1html_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "HomepageTest__portfolio-details-1html_0_document_1_tablet.png",
         "label": "/portfolio-details-1.html",
@@ -47,18 +47,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 16.953227257853403,
-          "misMatchPercentage": "16.95",
-          "analysisTime": 51
+          "rawMisMatchPercentage": 0.16238547120418848,
+          "misMatchPercentage": "0.16",
+          "analysisTime": 45
         },
-        "diffImage": "..\\bitmaps_test\\20230129-224813\\failed_diff_HomepageTest__portfolio-details-1html_0_document_1_tablet.png"
+        "diffImage": "..\\bitmaps_test\\20230129-224304\\failed_diff_HomepageTest__portfolio-details-1html_0_document_1_tablet.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\HomepageTest__portfolio-details-1html_0_document_2_desktop.png",
-        "test": "..\\bitmaps_test\\20230129-224813\\HomepageTest__portfolio-details-1html_0_document_2_desktop.png",
+        "test": "..\\bitmaps_test\\20230129-224304\\HomepageTest__portfolio-details-1html_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "HomepageTest__portfolio-details-1html_0_document_2_desktop.png",
         "label": "/portfolio-details-1.html",
@@ -76,16 +76,16 @@ report({
           },
           "rawMisMatchPercentage": 0.12253086419753087,
           "misMatchPercentage": "0.12",
-          "analysisTime": 63
+          "analysisTime": 49
         },
-        "diffImage": "..\\bitmaps_test\\20230129-224813\\failed_diff_HomepageTest__portfolio-details-1html_0_document_2_desktop.png"
+        "diffImage": "..\\bitmaps_test\\20230129-224304\\failed_diff_HomepageTest__portfolio-details-1html_0_document_2_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\HomepageTest__portfolio-details-2html_0_document_0_phone.png",
-        "test": "..\\bitmaps_test\\20230129-224813\\HomepageTest__portfolio-details-2html_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20230129-224304\\HomepageTest__portfolio-details-2html_0_document_0_phone.png",
         "selector": "document",
         "fileName": "HomepageTest__portfolio-details-2html_0_document_0_phone.png",
         "label": "/portfolio-details-2.html",
@@ -101,18 +101,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 9.960969597370584,
-          "misMatchPercentage": "9.96",
-          "analysisTime": 35
+          "rawMisMatchPercentage": 6.729406327033689,
+          "misMatchPercentage": "6.73",
+          "analysisTime": 33
         },
-        "diffImage": "..\\bitmaps_test\\20230129-224813\\failed_diff_HomepageTest__portfolio-details-2html_0_document_0_phone.png"
+        "diffImage": "..\\bitmaps_test\\20230129-224304\\failed_diff_HomepageTest__portfolio-details-2html_0_document_0_phone.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\HomepageTest__portfolio-details-2html_0_document_1_tablet.png",
-        "test": "..\\bitmaps_test\\20230129-224813\\HomepageTest__portfolio-details-2html_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20230129-224304\\HomepageTest__portfolio-details-2html_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "HomepageTest__portfolio-details-2html_0_document_1_tablet.png",
         "label": "/portfolio-details-2.html",
@@ -128,18 +128,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 17.884915865384617,
-          "misMatchPercentage": "17.88",
-          "analysisTime": 65
+          "rawMisMatchPercentage": 0.15905448717948717,
+          "misMatchPercentage": "0.16",
+          "analysisTime": 42
         },
-        "diffImage": "..\\bitmaps_test\\20230129-224813\\failed_diff_HomepageTest__portfolio-details-2html_0_document_1_tablet.png"
+        "diffImage": "..\\bitmaps_test\\20230129-224304\\failed_diff_HomepageTest__portfolio-details-2html_0_document_1_tablet.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\HomepageTest__portfolio-details-2html_0_document_2_desktop.png",
-        "test": "..\\bitmaps_test\\20230129-224813\\HomepageTest__portfolio-details-2html_0_document_2_desktop.png",
+        "test": "..\\bitmaps_test\\20230129-224304\\HomepageTest__portfolio-details-2html_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "HomepageTest__portfolio-details-2html_0_document_2_desktop.png",
         "label": "/portfolio-details-2.html",
@@ -155,14 +155,14 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 26.533950617283953,
-          "misMatchPercentage": "26.53",
-          "analysisTime": 72
+          "rawMisMatchPercentage": 0.12253086419753087,
+          "misMatchPercentage": "0.12",
+          "analysisTime": 55
         },
-        "diffImage": "..\\bitmaps_test\\20230129-224813\\failed_diff_HomepageTest__portfolio-details-2html_0_document_2_desktop.png"
+        "diffImage": "..\\bitmaps_test\\20230129-224304\\failed_diff_HomepageTest__portfolio-details-2html_0_document_2_desktop.png"
       },
       "status": "fail"
     }
   ],
   "id": "Homepage Test"
-});
+}

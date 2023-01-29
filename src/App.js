@@ -16,7 +16,7 @@ function App() {
   const [referUrl, setReferUrl] = useState("");
   const [url, setUrl] = useState("");
   const [pages, setPages] = useState("");
-  const [result, setResult] = useState("http://localhost:8080/html_report/index.html");
+  const [result, setResult] = useState("");
   const [step, setStep] = useState(1);
   const [load, setLoad] = useState(false);
 
@@ -90,11 +90,10 @@ function App() {
     axios.post(`http://localhost:8080/test`, { url: url, referUrl: referUrl, pages: pages.split("\n") })
       .then(res => {
         console.log(res.data);
-        setTimeout(() => {
-          setResult(res.data);
+        if (res.data == "complete") {
           setLoad(false);
-          // window.location.reload();
-        }, 60000);
+          setResult('http://localhost:8080/html_report/test.html');
+        }
       })
   }
   const handleClear = () => {
