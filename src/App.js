@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Allowed extensions for input file
 const allowedExtensions = ["csv"];
-
+const backendUrl = 'http://localhost:8080';
 function App() {
   const [referUrl, setReferUrl] = useState("");
   const [url, setUrl] = useState("");
@@ -87,18 +87,18 @@ function App() {
   }
   const handleTest = () => {
     setLoad(true);
-    axios.post(`http://localhost:8080/test`, { url: url, referUrl: referUrl, pages: pages.split("\n") })
+    axios.post(backendUrl+`/test`, { url: url, referUrl: referUrl, pages: pages.split("\n") })
       .then(res => {
         console.log(res.data);
         if (res.data == "complete") {
           setLoad(false);
-          setResult('http://localhost:8080/html_report/test.html');
+          setResult(backendUrl+'/html_report/test.html');
         }
       })
   }
   const handleClear = () => {
     setResult('');
-    axios.get(`http://localhost:8080/clear`)
+    axios.get(backendUrl+`/clear`)
       .then(res => {
         window.location.reload();
       })
