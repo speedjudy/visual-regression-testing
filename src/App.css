@@ -46,3 +46,6 @@
       no-repeat;
   z-index: 1;
 }
+.steps {
+  height: 400px;
+}
